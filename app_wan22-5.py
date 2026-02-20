@@ -17,8 +17,8 @@ from PIL import Image
 import subprocess, shlex, math
 
 # ------------------ Config ------------------
-WAN22_DIR = "/path/to/Wan2.2-TI2V-5B-Diffusers"   # Your local locale
-MODEL_ID_FALLBACK = "Wan-AI/Wan2.2-TI2V-5B-Diffusers"     # repo HF (only fallback)
+WAN22_DIR = "/kaggle/working/Wan2.2-5B-Diffusers"   # Your local locale
+MODEL_ID_FALLBACK = "Wan-AI/Wan2.1-T2V-1.3B"     # repo HF (only fallback)
 DTYPE = torch.float16 if torch.cuda.is_available() else torch.float32
 
 SAVE_DIR = Path("static/videos")
